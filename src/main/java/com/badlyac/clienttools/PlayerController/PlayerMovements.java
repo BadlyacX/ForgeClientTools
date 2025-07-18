@@ -1,4 +1,4 @@
-package com.badlyac.clienttools.playermovement;
+package com.badlyac.clienttools.PlayerController;
 
 
 import net.minecraft.client.Minecraft;
@@ -23,34 +23,27 @@ public class PlayerMovements {
             case NORTH:
                 moveForward(true);
                 break;
-
             case SOUTH:
                 moveBackward(true);
                 break;
-
             case EAST:
                 moveRight(true);
                 break;
-
             case WEST:
                 moveLeft(true);
                 break;
-
             case NORTH_EAST:
                 moveForward(true);
                 moveRight(true);
                 break;
-
             case NORTH_WEST:
                 moveForward(true);
                 moveLeft(true);
                 break;
-
             case SOUTH_EAST:
                 moveBackward(true);
                 moveRight(true);
                 break;
-
             case SOUTH_WEST:
                 moveBackward(true);
                 moveLeft(true);
@@ -63,39 +56,31 @@ public class PlayerMovements {
             case NORTH:
                 moveForward(false);
                 break;
-
             case SOUTH:
                 moveBackward(false);
                 break;
-
             case EAST:
                 moveRight(false);
                 break;
-
             case WEST:
                 moveLeft(false);
                 break;
-
             case NORTH_EAST:
                 moveForward(false);
                 moveRight(false);
                 break;
-
             case NORTH_WEST:
                 moveForward(false);
                 moveLeft(false);
                 break;
-
             case SOUTH_EAST:
                 moveBackward(false);
                 moveRight(false);
                 break;
-
             case SOUTH_WEST:
                 moveBackward(false);
                 moveLeft(false);
                 break;
-
             case ALL_DIRECTION:
                 moveRight(false);
                 moveLeft(false);
