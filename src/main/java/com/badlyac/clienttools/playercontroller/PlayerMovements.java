@@ -1,4 +1,4 @@
-package com.badlyac.clienttools.PlayerController;
+package com.badlyac.clienttools.playercontroller;
 
 
 import net.minecraft.client.Minecraft;
