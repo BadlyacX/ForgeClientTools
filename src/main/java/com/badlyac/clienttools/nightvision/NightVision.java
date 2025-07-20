@@ -1,5 +1,6 @@
 package com.badlyac.clienttools.nightvision;
 
+import com.badlyac.clienttools.IEventSubscriber;
 import com.badlyac.clienttools.utils.gamma.GammaUtil;
 import com.badlyac.clienttools.utils.msg.MsgUtil;
 import net.minecraft.util.EnumChatFormatting;
@@ -8,8 +9,12 @@ import net.minecraftforge.fml.common.gameevent.InputEvent;
 import com.badlyac.clienttools.keybindings.Keybindings;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 
-public class NightVision {
+public class NightVision implements IEventSubscriber {
     private static boolean enabled = true;
+
+    public NightVision() {
+        this.registerToForgeBus();
+    }
 
     @SubscribeEvent
     public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {

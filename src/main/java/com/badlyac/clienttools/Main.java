@@ -16,7 +16,10 @@ public class Main {
     public void init(FMLInitializationEvent event) {
         Keybindings.register();
 
-        MinecraftForge.EVENT_BUS.register(new NightVision());
-        MinecraftForge.EVENT_BUS.register(new ToggleSprint());
+        new ToggleSprint();
+        new NightVision();
+
+       // MinecraftForge.EVENT_BUS.register(new NightVision());
+       // MinecraftForge.EVENT_BUS.register(new ToggleSprint());
     }
 }

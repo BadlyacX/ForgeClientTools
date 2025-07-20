@@ -1,5 +1,6 @@
 package com.badlyac.clienttools.togglesprint;
 
+import com.badlyac.clienttools.IEventSubscriber;
 import com.badlyac.clienttools.keybindings.Keybindings;
 import com.badlyac.clienttools.utils.gameaccess.GameAccess;
 import com.badlyac.clienttools.utils.msg.MsgUtil;
@@ -9,10 +10,14 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-public class ToggleSprint {
+public class ToggleSprint implements IEventSubscriber {
 
     private static boolean enabled = true;
     private static final int sprintKeycode = GameAccess.getGS().keyBindSprint.getKeyCode();
+
+    public ToggleSprint() {
+        this.registerToForgeBus();
+    }
 
     @SubscribeEvent
     public void onClientTick(TickEvent.ClientTickEvent event) {
