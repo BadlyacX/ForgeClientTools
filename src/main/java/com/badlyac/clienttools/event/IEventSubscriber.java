@@ -1,4 +1,4 @@
-package com.badlyac.clienttools;
+package com.badlyac.clienttools.event;
 
 import net.minecraftforge.common.MinecraftForge;
 

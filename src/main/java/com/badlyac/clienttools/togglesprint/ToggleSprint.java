@@ -1,6 +1,6 @@
 package com.badlyac.clienttools.togglesprint;
 
-import com.badlyac.clienttools.IEventSubscriber;
+import com.badlyac.clienttools.event.IEventSubscriber;
 import com.badlyac.clienttools.keybindings.Keybindings;
 import com.badlyac.clienttools.utils.gameaccess.GameAccess;
 import com.badlyac.clienttools.utils.msg.MsgUtil;

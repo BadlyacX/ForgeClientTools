@@ -1,6 +1,6 @@
 package com.badlyac.clienttools.nightvision;
 
-import com.badlyac.clienttools.IEventSubscriber;
+import com.badlyac.clienttools.event.IEventSubscriber;
 import com.badlyac.clienttools.utils.gamma.GammaUtil;
 import com.badlyac.clienttools.utils.msg.MsgUtil;
 import net.minecraft.util.EnumChatFormatting;
