@@ -1,6 +1,5 @@
 package com.badlyac.clienttools.playercontroller;
 
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 
